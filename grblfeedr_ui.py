@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'mainwindow.ui'
 #
-# Created: Mon Jan 09 16:28:52 2012
-#      by: pyside-uic 0.2.13 running on PySide 1.0.6
+# Created: Wed Jun 27 11:39:22 2012
+#      by: pyside-uic 0.2.13 running on PySide 1.1.0
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -248,18 +248,21 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setContentsMargins(2, 2, 2, 2)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.go_g91 = QtGui.QPushButton(self.horizontalLayoutWidget_2)
-        self.go_g91.setMinimumSize(QtCore.QSize(0, 40))
         self.go_g91.setObjectName("go_g91")
         self.verticalLayout_8.addWidget(self.go_g91)
         self.go_g90 = QtGui.QPushButton(self.horizontalLayoutWidget_2)
         self.go_g90.setObjectName("go_g90")
         self.verticalLayout_8.addWidget(self.go_g90)
+        self.go_g00home = QtGui.QPushButton(self.horizontalLayoutWidget_2)
+        self.go_g00home.setMinimumSize(QtCore.QSize(0, 45))
+        self.go_g00home.setObjectName("go_g00home")
+        self.verticalLayout_8.addWidget(self.go_g00home)
         self.go_g00 = QtGui.QPushButton(self.horizontalLayoutWidget_2)
-        self.go_g00.setMinimumSize(QtCore.QSize(0, 70))
+        self.go_g00.setMinimumSize(QtCore.QSize(0, 45))
         self.go_g00.setObjectName("go_g00")
         self.verticalLayout_8.addWidget(self.go_g00)
         self.go_g01 = QtGui.QPushButton(self.horizontalLayoutWidget_2)
-        self.go_g01.setMinimumSize(QtCore.QSize(110, 70))
+        self.go_g01.setMinimumSize(QtCore.QSize(0, 45))
         self.go_g01.setObjectName("go_g01")
         self.verticalLayout_8.addWidget(self.go_g01)
         self.go_m03 = QtGui.QPushButton(self.horizontalLayoutWidget_2)
@@ -518,7 +521,7 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.tab, "")
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 778, 21))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 778, 25))
         self.menuBar.setObjectName("menuBar")
         self.menuQt = QtGui.QMenu(self.menuBar)
         self.menuQt.setObjectName("menuQt")
@@ -574,6 +577,7 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">termWindow</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
         self.go_g91.setText(QtGui.QApplication.translate("MainWindow", "Relative (G91)", None, QtGui.QApplication.UnicodeUTF8))
         self.go_g90.setText(QtGui.QApplication.translate("MainWindow", "Absolute (G90)", None, QtGui.QApplication.UnicodeUTF8))
+        self.go_g00home.setText(QtGui.QApplication.translate("MainWindow", "Home (G00 X0 Y0 Z0)", None, QtGui.QApplication.UnicodeUTF8))
         self.go_g00.setText(QtGui.QApplication.translate("MainWindow", "Fast Move (G00)", None, QtGui.QApplication.UnicodeUTF8))
         self.go_g01.setText(QtGui.QApplication.translate("MainWindow", "Linear Move (G01)", None, QtGui.QApplication.UnicodeUTF8))
         self.go_m03.setText(QtGui.QApplication.translate("MainWindow", "Motor On (M03)", None, QtGui.QApplication.UnicodeUTF8))
