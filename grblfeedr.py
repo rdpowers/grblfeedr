@@ -132,8 +132,10 @@ class GrblForm(QtGui.QMainWindow):
         QtCore.QObject.connect(self.thread_processor, QtCore.SIGNAL("regen"), self.common_regenTerminal)
         
         self.ui.go_g00.clicked.connect(self.click_go_g00)
+        self.ui.go_g00home.clicked.connect(self.click_go_g00home)
         self.ui.go_g01.clicked.connect(self.click_go_g01)
-        
+
+
         self.ui.go_g90.clicked.connect(self.click_go_g90)
         self.ui.go_g91.clicked.connect(self.click_go_g91)
         
@@ -356,11 +358,13 @@ class GrblForm(QtGui.QMainWindow):
 
     def click_go_g00(self):
         self.common_sendLine(message = 'G00', color = 'orange')
+    def click_go_g00home(self):
+        self.common_sendLine(message = 'G00 X0 Y0 Z0', color = 'orange')
     def click_go_g01(self):
         self.common_sendLine(message = 'G01', color = 'orange')
         
     def click_go_g90(self):
-        self.common_sendLine(message = '90', color = 'orange')
+        self.common_sendLine(message = 'G90', color = 'orange')
     def click_go_g91(self):
         self.common_sendLine(message = 'G91', color = 'orange')
         

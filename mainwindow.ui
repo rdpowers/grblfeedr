@@ -624,12 +624,6 @@ p, li { white-space: pre-wrap; }
          </property>
          <item>
           <widget class="QPushButton" name="go_g91">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>40</height>
-            </size>
-           </property>
            <property name="text">
             <string>Relative (G91)</string>
            </property>
@@ -643,11 +637,24 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
          <item>
+          <widget class="QPushButton" name="go_g00home">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Home (G00 X0 Y0 Z0)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QPushButton" name="go_g00">
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>70</height>
+             <height>45</height>
             </size>
            </property>
            <property name="text">
@@ -659,8 +666,8 @@ p, li { white-space: pre-wrap; }
           <widget class="QPushButton" name="go_g01">
            <property name="minimumSize">
             <size>
-             <width>110</width>
-             <height>70</height>
+             <width>0</width>
+             <height>45</height>
             </size>
            </property>
            <property name="text">
@@ -1304,7 +1311,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>778</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuQt">
@@ -1346,8 +1353,8 @@ p, li { white-space: pre-wrap; }
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>452</x>
-     <y>263</y>
+     <x>492</x>
+     <y>376</y>
     </hint>
     <hint type="destinationlabel">
      <x>249</x>
